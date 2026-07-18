@@ -92,8 +92,8 @@ Note that during this step, you may encounter a lot of issues with [dependencies
 ## Cross-compile the Program
 Since we want to run `hello.c` bare-metal (no OS like linux to handle the execution), we need to use the newlib toolchain. [Download the toolchain](https://openrisc.io/software#newlib-toolchain) and untar it like we did for QEMU.
 ```
-curl -O -L https://github.com/stffrdhrn/or1k-toolchain-build/releases/download/or1k-15.1.0-20250621/or1k-elf-15.1.0-20250621.tar.xz
-tar -xf or1k-elf-15.1.0-20250621
+curl -O -L https://github.com/stffrdhrn/or1k-toolchain-build/releases/download/or1k-16.1.0-20260704/or1k-elf-16.1.0-20260704.tar.xz
+tar -xf or1k-elf-16.1.0-20260704
 export PATH=$PATH:<path of or1k-elf bin folder>
 ```
 > One important thing to note is that compiling a C program using a bare-metal cross-toolchain like `or1k-elf-` results in a binary code that directly runs on the hardware. For example, `printf()` in source code gets translated into writing bytes to the UART by `or1k-elf-`. In contrast, `or1k-none-linux-musl-` will translate it into a `write` system call, which in turns gets further handled by the linux OS. 

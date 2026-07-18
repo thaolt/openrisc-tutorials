@@ -51,7 +51,7 @@ cd /tmp/or1ksim/
 
 # Download or1ksim, toolchain and a test project
 curl -L -O https://github.com/openrisc/or1ksim/releases/download/2025-04-27/or1ksim-2025-04-27.tar.gz
-curl -L -O https://github.com/stffrdhrn/or1k-toolchain-build/releases/download/or1k-15.1.0-20250621/or1k-elf-15.1.0-20250621.tar.xz
+curl -L -O https://github.com/stffrdhrn/or1k-toolchain-build/releases/download/or1k-16.1.0-20260704/or1k-elf-16.1.0-20260704.tar.xz
 
 # Download example programs
 curl -L -O https://openrisc.io/tutorials/sw/hello/hello.c
@@ -62,7 +62,7 @@ curl -L -O https://github.com/stffrdhrn/or1k-utils/raw/refs/heads/master/or1ksim
 
 # Extract everything
 tar -xf or1ksim-2025-04-27.tar.gz
-tar -xf or1k-elf-15.1.0-20250621.tar.xz
+tar -xf or1k-elf-16.1.0-20260704.tar.xz
 
 export PATH=$PATH:$PWD/or1k/bin:$PWD/or1k-elf/bin
 ```

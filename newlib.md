@@ -20,10 +20,10 @@ mkdir /tmp/or1k-toolchains/
 cd /tmp/or1k-toolchains/
 
 # Download our toolchain
-curl -L -O https://github.com/stffrdhrn/or1k-toolchain-build/releases/download/or1k-15.1.0-20250621/or1k-elf-15.1.0-20250621.tar.xz
+curl -L -O https://github.com/stffrdhrn/or1k-toolchain-build/releases/download/or1k-16.1.0-20260704/or1k-elf-16.1.0-20260704.tar.xz
 
 # Extract everything
-tar -xf or1k-elf-15.1.0-20250621.tar.xz
+tar -xf or1k-elf-16.1.0-20260704.tar.xz
 
 export PATH=$PATH:$PWD/or1k-elf/bin
 ```

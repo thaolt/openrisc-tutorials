@@ -32,7 +32,7 @@ Additionally for the Linux tutorial we will need:
 We will download these below.
 
  - linux - Linux kernel source code
- - [or1k-none-linux-musl-15.1.0-20250621.tar.xz](https://github.com/stffrdhrn/or1k-toolchain-build/releases/download/or1k-15.1.0-20250621/or1k-none-linux-musl-15.1.0-20250621.tar.xz) - OpenRISC musl linux userspace toolchain
+ - [or1k-none-linux-musl-16.1.0-20260704.tar.xz](https://github.com/stffrdhrn/or1k-toolchain-build/releases/download/or1k-16.1.0-20260704/or1k-none-linux-musl-16.1.0-20260704.tar.xz) - OpenRISC musl linux userspace toolchain
  - [busybox-small-rootfs-20250708.tar.xz](https://github.com/stffrdhrn/or1k-rootfs-build/releases/download/or1k-20250708/busybox-small-rootfs-20250708.tar.xz) - Linux rootfs for userspace programs
 
 # Linux on De0 Nano Tutorial
@@ -70,7 +70,7 @@ git clone --depth 1 --branch v7.0.0-rc1 https://kernel.googlesource.com/pub/scm/
 
 # Download a busybox rootfs and our toolchain
 curl -L -O https://github.com/stffrdhrn/or1k-rootfs-build/releases/download/or1k-20250708/busybox-small-rootfs-20250708.tar.xz
-curl -L -O https://github.com/stffrdhrn/or1k-toolchain-build/releases/download/or1k-15.1.0-20250621/or1k-none-linux-musl-15.1.0-20250621.tar.xz
+curl -L -O https://github.com/stffrdhrn/or1k-toolchain-build/releases/download/or1k-16.1.0-20260704/or1k-none-linux-musl-16.1.0-20260704.tar.xz
 
 # Add IP cores to the environment
 fusesoc library add fusesoc-cores https://github.com/fusesoc/fusesoc-cores
@@ -83,7 +83,7 @@ fusesoc core show de0_nano
 
 # Extract software needed for the kernel
 tar -xf busybox-small-rootfs-20250708.tar.xz
-tar -xf or1k-none-linux-musl-15.1.0-20250621.tar.xz
+tar -xf or1k-none-linux-musl-16.1.0-20260704.tar.xz
 
 export PATH=$PATH:$PWD/or1k-none-linux-musl/bin
 ```

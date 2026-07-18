@@ -19,7 +19,7 @@ nav_order: 2
 To be downloaded below.
 
  - [qemu-9.2.4.tar.xz](https://download.qemu.org/qemu-9.2.4.tar.xz) - QEMU source code
- - [or1k-nonehf-linux-gnu-15.1.0-20250621.tar.xz](https://github.com/stffrdhrn/or1k-toolchain-build/releases/download/or1k-15.1.0-20250621/or1k-nonehf-linux-gnu-15.1.0-20250621.tar.xz) - OpenRISC glibc linux userspace toolchain
+ - [or1k-nonehf-linux-gnu-16.1.0-20260704.tar.xz](https://github.com/stffrdhrn/or1k-toolchain-build/releases/download/or1k-16.1.0-20260704/or1k-nonehf-linux-gnu-16.1.0-20260704.tar.xz) - OpenRISC glibc linux userspace toolchain
  - [linux-6.15.5.tar.xz](https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.15.5.tar.xz) - Linux kernel source code
  - [buildroot-qemu-rootfs-20250708.tar.xz](https://github.com/stffrdhrn/or1k-rootfs-build/releases/download/or1k-20250708/buildroot-qemu-rootfs-20250708.tar.xz) - Linux rootfs qcow image
 
@@ -61,13 +61,13 @@ cd /tmp/linux-on-qemu/
 curl -L -O https://download.qemu.org/qemu-9.2.4.tar.xz
 curl -L -O https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.15.5.tar.xz
 curl -L -O https://github.com/stffrdhrn/or1k-rootfs-build/releases/download/or1k-20250708/buildroot-qemu-rootfs-20250708.tar.xz
-curl -L -O https://github.com/stffrdhrn/or1k-toolchain-build/releases/download/or1k-15.1.0-20250621/or1k-nonehf-linux-gnu-15.1.0-20250621.tar.xz
+curl -L -O https://github.com/stffrdhrn/or1k-toolchain-build/releases/download/or1k-16.1.0-20260704/or1k-nonehf-linux-gnu-16.1.0-20260704.tar.xz
 
 # Extract everything
 tar -xf qemu-9.2.4.tar.xz
 tar -xf linux-6.15.5.tar.xz
 tar -xf buildroot-qemu-rootfs-20250708.tar.xz
-tar -xf or1k-nonehf-linux-gnu-15.1.0-20250621.tar.xz
+tar -xf or1k-nonehf-linux-gnu-16.1.0-20260704.tar.xz
 
 export PATH=$PATH:$PWD/or1k-nonehf-linux-gnu/bin
 ```
